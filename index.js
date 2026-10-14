@@ -7,8 +7,8 @@ if (r % 7 === 0) {
     pi = 3.14
 }
 
-luas = r * r * pi
+const luas = r * r * pi
 console.log(luas)
 
-keliling = 2 * pi * r
+const keliling = 2 * pi * r
 console.log(keliling)

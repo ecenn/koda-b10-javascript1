@@ -1,21 +1,26 @@
 const lingkaran = {
-    rLingkaran: 7,
+    r: 10,
+    pi: 22/7,
     luasLingkaran: function() {
-        return pi * this.rLingkaran * this.rLingkaran
+        return pi * this.r * this.r
     },
     kelilingLingkaran: function() {
-        return 2 * pi * this.rLingkaran
+        return 2 * pi * this.r
+    },
+    cekPi: function() {
+        if (this.r % 7 === 0) {
+            this.pi = this.pi
+        } else {
+            this.pi = 3.14
+        }
+        return this.pi
     }
 }
 
-const {rLingkaran: r} = lingkaran
-let pi = null
+const {r} = lingkaran
+let {pi} = lingkaran
 
-if (r % 7 === 0) {
-    pi = 22 / 7
-} else {
-    pi = 3.14
-}
+pi = lingkaran.cekPi()
 
 const luas = lingkaran.luasLingkaran()
 console.log(`Luas: ${luas}`)

@@ -1,14 +1,17 @@
 // callback
 
-function hitungLingkaran(r, cb1, cb2) {
-    let pi = null
-    if (r % 7 === 0) {
-        pi = 22/7
-    } else {
-        pi = 3.14
-    }
+function hitungLingkaran(r, cb0, cb1, cb2) {
+    let pi = cb0(r)
     cb1(r, pi)
     cb2(r, pi)
+}
+
+function cekPi(x) {
+    if (x % 7 === 0) {
+        return 22/7
+    } else {
+        return 3.14
+    }
 }
 
 function luas(a, pi1) {
@@ -21,4 +24,4 @@ function keliling(b, pi2) {
     console.log(keliling)
 }
 
-hitungLingkaran(10, luas, keliling)
+hitungLingkaran(10, cekPi, luas, keliling)

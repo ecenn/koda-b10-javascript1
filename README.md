@@ -2,8 +2,8 @@
 
 ## Cara Kerja Program
 
-- Ada 3 function (hitungLingkaran, luas, dan keliling)
-- Menjalankan function hitungLingkaran dengan input parameter nilai r, callback function luas, dan callback function keliling
+- Ada 4 function (hitungLingkaran, cekPi, luas, dan keliling)
+- Menjalankan function hitungLingkaran dengan input parameter nilai r, callback function cekPi, callback function luas, dan callback function keliling
 
 ## Flowchart
 

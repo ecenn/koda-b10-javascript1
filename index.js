@@ -7,8 +7,22 @@ if (r % 7 === 0) {
     pi = 3.14
 }
 
-const luas = r * r * pi
-console.log(luas)
+const luasImpure = () => {
+    return r * r * pi
+}
+console.log(luasImpure())
 
-const keliling = 2 * pi * r
-console.log(keliling)
+const kelilingImpure = () => {
+    return 2 * pi * r
+}
+console.log(kelilingImpure())
+
+const luasPure = (j) => {
+    return j * j * pi
+}
+console.log(luasPure(12))
+
+const kelilingPure = (j) => {
+    return 2 * pi * j
+}
+console.log(kelilingPure(12))

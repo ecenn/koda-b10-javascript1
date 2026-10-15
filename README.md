@@ -4,11 +4,10 @@
 
 - Ada object lingkaran yang memiliki 2 key (r dan pi) dan 3 method (luasLingkaran, kelilingLingkaran, dan cekPi)
 - Destrukturisasi nilai r dari object lingkaran ke dalam variabel r
-- Destrukturisasi nilai pi dari object lingkaran ke dalam variabel pi
-- Menjalankan method cekPi untuk memperbarui nilai pi
-- Inisialisasi variabel luas dengan nilai yang didapat dengan memanggil method luasLingkaran() dari object lingkaran
+- Menjalankan method lingkaran.cekPi untuk memperbarui nilai pi
+- Inisialisasi variabel luas dengan memanggil method lingkaran.luasLingkaran()
 - Memberikan output luas
-- Inisialisasi variabel keliling dengan nilai yang didapat dengan memanggil method kelilingLingkaran() dari object lingkaran
+- Inisialisasi variabel keliling dengan memanggil method lingkaran.kelilingLingkaran()
 - Memberikan output keliling
 
 ## Flowchart

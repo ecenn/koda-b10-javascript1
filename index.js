@@ -10,15 +10,21 @@ if (r % 7 === 0) {
 const impure = () => {
     luas = r * r * pi
     keliling = 2 * pi * r
-    return console.log(`Luas: ${luas} dan Keliling: ${keliling}`)
+    hasil = [luas, keliling]
+    return hasil
 }
 
-impure()
+lingkaran1 = impure()
+const [luas1, keliling1] = lingkaran1
+console.log(`Luas: ${luas1} dan Keliling ${keliling1}`)
 
 const pure = (j) => {
     luas = j * j * pi
     keliling = 2 * pi * j
-    return console.log(`Luas: ${luas} dan Keliling: ${keliling}`)
+    hasil = [luas, keliling]
+    return hasil
 }
 
-pure(12)
+lingkaran2 = pure(12)
+const [luas2, keliling2] = lingkaran2
+console.log(`Luas: ${luas2} dan Keliling ${keliling2}`)

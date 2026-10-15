@@ -1,28 +1,25 @@
-// method
+// callback
 
-const lingkaran = {
-    r: 7,
-    pi: null,
-    luasLingkaran: function() {
-        return this.pi * this.r * this.r
-    },
-    kelilingLingkaran: function() {
-        return 2 * this.pi * this.r
-    },
-    cekPi: function() {
-        if (this.r % 7 === 0) {
-            this.pi = 22/7
-        } else {
-            this.pi = 3.14
-        }
-        return this.pi
+let pi = null
+
+function cekPi(r, cb1, cb2) {
+    if (r % 7 === 0) {
+        pi = 22/7
+    } else {
+        pi = 3.14
     }
+    cb1()
+    cb2()
 }
 
-lingkaran.cekPi()
+function luas() {
+    const luas = pi * r * r
+    console.log(luas)
+}
 
-const luas = lingkaran.luasLingkaran()
-console.log(`Luas: ${luas}`)
+function keliling() {
+    const keliling = 2 * pi * r
+    console.log(keliling)
+}
 
-const keliling = lingkaran.kelilingLingkaran()
-console.log(`Keliling: ${keliling}`)
+cekPi(7, luas, keliling)

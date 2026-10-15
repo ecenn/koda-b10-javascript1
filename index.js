@@ -7,6 +7,8 @@ if (r % 7 === 0) {
     pi = 3.14
 }
 
+// flow impure function
+
 const impure = () => {
     luas = r * r * pi
     keliling = 2 * pi * r
@@ -15,8 +17,10 @@ const impure = () => {
 }
 
 lingkaran1 = impure()
-const [luas1, keliling1] = lingkaran1
+const [luas1, keliling1] = lingkaran1   // deconstructure
 console.log(`Luas: ${luas1} dan Keliling ${keliling1}`)
+
+// flow pure function
 
 const pure = (j) => {
     luas = j * j * pi
@@ -26,5 +30,5 @@ const pure = (j) => {
 }
 
 lingkaran2 = pure(12)
-const [luas2, keliling2] = lingkaran2
+const [luas2, keliling2] = lingkaran2   // deconstructure
 console.log(`Luas: ${luas2} dan Keliling ${keliling2}`)

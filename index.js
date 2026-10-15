@@ -1,6 +1,8 @@
+// method
+
 const lingkaran = {
     r: 7,
-    pi: 22/7,
+    pi: null,
     luasLingkaran: function() {
         return this.pi * this.r * this.r
     },
@@ -9,7 +11,7 @@ const lingkaran = {
     },
     cekPi: function() {
         if (this.r % 7 === 0) {
-            this.pi = this.pi
+            this.pi = 22/7
         } else {
             this.pi = 3.14
         }
@@ -17,7 +19,6 @@ const lingkaran = {
     }
 }
 
-const {r} = lingkaran
 lingkaran.cekPi()
 
 const luas = lingkaran.luasLingkaran()

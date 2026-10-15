@@ -3,7 +3,7 @@
 ## Cara Kerja Program
 
 - Ada object lingkaran yang memiliki key rLingkaran dan 2 method (luasLingkaran dan kelilingLingkaran)
-- Destrukturisasi nilai rLingkaran dari object lingkaran dengan alias r
+- Destrukturisasi value rLingkaran dari object lingkaran dengan alias r
 - Inisialisasi variabel pi
 - Apabila r habis dibagi 7, maka nilai pi menjadi 22/7
 - Jika tidak maka nilai pi menjadi 3.14

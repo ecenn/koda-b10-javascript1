@@ -1,0 +1,21 @@
+{
+  "name": "js1",
+  "version": "1.0.0",
+  "description": "- Ada 4 function (hitungLingkaran, cekPi, luas, dan keliling)\r - Menjalankan function hitungLingkaran dengan input parameter nilai r, callback function cekPi, callback function luas, dan callback function keliling",
+  "license": "MIT",
+  "author": "jason",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "lint": "eslint .",
+    "fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0"
+  }
+}
